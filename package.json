@@ -1,0 +1,19 @@
+{
+  "name": "knights-travails",
+  "version": "1.0.0",
+  "description": "See 'Description' in README.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NestorNebula/knights-travails.git"
+  },
+  "author": "Noa Houssier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NestorNebula/knights-travails/issues"
+  },
+  "homepage": "https://github.com/NestorNebula/knights-travails#readme"
+}
