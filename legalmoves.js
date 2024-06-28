@@ -23,4 +23,8 @@ function appendMoves(array) {
   }
 }
 
+function checkMove(array, col, row) {
+  if (7 >= col && col >= 0 && 7 >= row && row >= 0) array.push([col, row]);
+}
+
 export { legalMoves };
