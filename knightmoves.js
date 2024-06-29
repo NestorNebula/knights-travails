@@ -4,7 +4,11 @@ export function knightMoves(startSquare, endSquare) {
   const col = startSquare[0];
   const row = startSquare[1];
   const path = [];
-  return search(col, row, endSquare, path);
+  const result = search(col, row, endSquare, path);
+  console.log(`You made it in ${result.length - 1} moves! Here's your path:`);
+  for (let i = 0; i < result.length; i++) {
+    console.log(result[i]);
+  }
 }
 
 function search(col, row, target, path, faster = Infinity) {
