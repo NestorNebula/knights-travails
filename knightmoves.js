@@ -1,13 +1,10 @@
 import { legalMoves } from './legalmoves.js';
 
 export function knightMoves(startSquare, endSquare) {
-  const col = startSquare[0];
-  const row = startSquare[1];
-  const path = [];
-  const result = search(col, row, endSquare, path);
-  console.log(`You made it in ${result.length - 1} moves! Here's your path:`);
-  for (let i = 0; i < result.length; i++) {
-    console.log(result[i]);
+  const path = search(startSquare[0], startSquare[1], endSquare, []);
+  console.log(`You made it in ${path.length - 1} moves! Here's your path:`);
+  for (let i = 0; i < path.length; i++) {
+    console.log(path[i]);
   }
 }
 
