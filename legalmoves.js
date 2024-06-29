@@ -9,14 +9,14 @@ function appendMoves(array) {
       const squareMoves = [];
       const col = i;
       const row = j;
-      checkMove(squareMoves, col - 2, row + 1);
-      checkMove(squareMoves, col - 1, row + 2);
       checkMove(squareMoves, col + 1, row + 2);
       checkMove(squareMoves, col + 2, row + 1);
       checkMove(squareMoves, col + 2, row - 1);
       checkMove(squareMoves, col + 1, row - 2);
       checkMove(squareMoves, col - 1, row - 2);
       checkMove(squareMoves, col - 2, row - 1);
+      checkMove(squareMoves, col - 2, row + 1);
+      checkMove(squareMoves, col - 1, row + 2);
       colMoves.push(squareMoves);
     }
     legalMoves.push(colMoves);
